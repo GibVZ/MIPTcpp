@@ -39,9 +39,9 @@ fig, ((lin_A, lin_B, lin_C), (log_A, log_B, log_C)) = plt.subplots(2, 3, figsize
 
 fig.suptitle('Smart search')
 
-draw_graphic(lin_A, log_A, 'A.txt', 'A')
-draw_graphic(lin_B, log_B, 'B.txt', 'B')
-draw_graphic(lin_C, log_C, 'C.txt', 'C')
+draw_graphic(lin_A, log_A, 'A_binomial.txt', 'A')
+draw_graphic(lin_B, log_B, 'B_binomial.txt', 'B')
+draw_graphic(lin_C, log_C, 'C_binomial.txt', 'C')
 
 plt.show()
 
