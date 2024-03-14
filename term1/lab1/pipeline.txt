@@ -1,0 +1,41 @@
+
+## ОСТОРОЖНО!!: Может выполнятся пипец долго
+# сначала запустим все плюсовые скрипты, чтобы потом графики построить
+
+cd brut_search
+g++ -std=c++20 -o brut_search brut_search.cpp
+./brut_search 999 10000 out.txt
+python3 graphic.py
+
+cd ../bin_search
+g++ -std=c++20 -o bin_search bin_search.cpp
+./bin_search 999 10000 out.txt
+python3 graphic.py
+
+
+cd ../sum_of_two
+
+g++ -std=c++20 -o sumof2sorted sumof2sorted.cpp
+g++ -std=c++20 -o sumof2unsorted sumof2unsorted.cpp
+
+./sumof2sorted 99 10000 out_sorted.txt
+./sumof2unsorted 99 10000 out_unsorted.txt
+
+python3 graphic.py
+
+
+
+cd ../freq_used
+
+g++ -std=c++20 -o A A.cpp
+g++ -std=c++20 -o B B.cpp
+g++ -std=c++20 -o C C.cpp
+
+./A 99 10000 A.txt
+./B 99 10000 B.txt
+./C 99 10000 C.txt
+
+python3 graphic.py
+
+# Теперь можно собирать tex
+## ОСТОРОЖНО!!: я это не уверен, что написал все команды правильно, но в репо есть уже скомпилированный отчет
